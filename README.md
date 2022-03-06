@@ -12,9 +12,9 @@ Then using this cleaned data the goals of the application was to give the user t
 
 
 #### Setup:
-- Because shiny.semantic 4.0.4 is required, we will use the {renv} package to finely control the package versions that we are using. 
+- shiny.semantic 4.0.4 was a specific package needed, so we will use the {renv} package to finely control the package versions that we are using. 
 
-- The final product should be uploaded to Github and hosted on Shinyapps.io, so we will be using the {rsconnect} package to upload the application.
+- The final product should be uploaded to Github and hosted on "shinyapps.io", so we will be using the {rsconnect} package to upload the application.
 
 
 
