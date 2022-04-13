@@ -1,0 +1,15 @@
+default:
+  sass:
+    input: "styles/main.scss"
+    style: "compressed"
+    output: "www/css/sass.min.css"
+  colors:
+    success: "#41aa00"
+    navy: "navy"
+  values:
+    base_lat: 55.728045
+    base_lon: 21.072115
+    base_zoom: 11
+  texts:
+    main_goal: "The main goal of this application was to work with AIS data such that a user can select a ship type, have that populate a selectInput for the name of the vessels of that type, and finally have that propegated to the leaflet map where it displays two points that represent the largest amount of distance traveled by that ship for any given point in its recorded travel."
+    about_1: "Create a module based design with the most efficient possible means of communicating between them. To accomplish this I am using a method that I call \"Sub-Nested Reactive Values\"."
