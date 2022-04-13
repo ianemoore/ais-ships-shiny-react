@@ -10,7 +10,10 @@
 
 server <- function(input, output, session) {
 
-  logger::log_shiny_input_changes(input)
+  ## Use for debugging purposes  
+  # logger::log_shiny_input_changes(input)
+  
+  
   
   # Define initial RV ----
   # ---------------------------/

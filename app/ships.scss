@@ -17,6 +17,34 @@ $app-color1: #15354a;
 $app-color2: #a6d5e0;
 
 
+// Moved from ui.R
+body {
+  overflow-y: hidden;
+}
+
+.ships_loading {
+  position: absolute;
+  inset: 0;
+  background-color: #15354a;
+  z-index: 10000;
+}               
+
+#init_spinner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}      
+
+i.red.icon {
+  color: #a6d5e0 !important;
+}
+
+
+
+
 
 #mainmap {
   height: 100vh !important;

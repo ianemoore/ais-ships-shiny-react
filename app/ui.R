@@ -7,53 +7,17 @@
 #--------------------------/
 
 
-
-#' JS libraries to be sourced in UI
-#--------------------------/
-
-react_loc0 <- 'https://unpkg.com/react@17/umd/react.production.min.js'
-react_loc1 <- 'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js'
-
-
-
-css0 <- '
-  body {
-    overflow-y: hidden;
-  }
-  
-  .ships_loading {
-    position: absolute;
-    inset: 0;
-    background-color: #15354a;
-    z-index: 10000;
-  }               
-  
-  #init_spinner {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }      
-  
-  i.red.icon {
-    color: #a6d5e0 !important;
-  }
-'
-
-
-#------------------------------------------
-
-
 ui <- semanticPage(
   theme = 'paper',
   margin = "0px",
   suppress_bootstrap = TRUE,
   
   ## React libraries
-  tags$script(src=react_loc0),
-  tags$script(src=react_loc1),
+  # tags$script(src=react_loc0),
+  # tags$script(src=react_loc1),
+  ###
+  html_dependency_react(),
+  ###
  
   mod_react_ui('react'),
   
