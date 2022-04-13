@@ -28,13 +28,18 @@ suppressMessages({
   library(sass)
   library(reactR)
   library(logger)
+  library(config)
 
 })
 
 
-base_la <- 55.728045
-base_lo <- 21.072115
-base_z <- 11
+consts <- config::get(file = "constants/constants.yml")
+
+
+
+base_la <- consts$values$base_lat 
+base_lo <- consts$values$base_lon
+base_z <- consts$values$base_zoom 
 
 
 source("modules/mod_mainmap.R")
@@ -55,7 +60,7 @@ pripas("current root_app = ", root_app)
 loc0 <- "data/ships_clean.rds"
 ships <- readRDS(loc0)
 
-glimpse(ships)
+# glimpse(ships)
 
 
 

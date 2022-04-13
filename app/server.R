@@ -185,9 +185,7 @@ server <- function(input, output, session) {
             
             h2('Welcome!'),
             
-            p(
-              'The main goal of this application was to work with AIS data such that a user can select a ship type, have that populate a selectInput for the name of the vessels of that type, and finally have that propegated to the leaflet map where it displays two points that represent the largest amount of distance traveled by that ship for any given point in its recorded travel.'
-            )
+            p(consts$text$main_goal)
             
           ),
           
@@ -199,9 +197,7 @@ server <- function(input, output, session) {
               style = "height: 100%",
               a(class = "ui green ribbon label override", "Goals"),
               
-              p(
-                'Create a module based design with the most efficient possible means of communicating between them. To accomplish this I am using a method that I call "Sub-Nested Reactive Values".'
-              ),
+              p(consts$text$about_1),
               
               p(
                 'Incorporate React using {reactR} babel transformation via module uiOutput to offload as much Shiny UI rendering as possible. This is showcased in the bottom right hand corner info section, as well as the React Portal based search functionality'
